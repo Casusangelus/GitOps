@@ -29,7 +29,7 @@ pipeline {
         }
         slackSend(message: """${env.JOB_NAME} #${env.BUILD_NUMBER} End
         (<${env.BUILD_URL}/last-changes|Check Last changed>)"""
-        , color: 'good', tokenCredentialId: 'slack-key')             
+        , color: 'good', tokenCredentialId: 'slack-token')             
       }
     }
   }
